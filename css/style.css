@@ -64,6 +64,18 @@ header .hero-text {
   text-align: center;
 }
 
+footer {
+  background-color: #4f4f4f;
+  color: #fff;
+  text-align: center;
+}
+footer .footer-content {
+  padding: 1rem 0;
+}
+footer p {
+  font-weight: lighter;
+}
+
 .bio {
   display: flex;
   align-items: center;
@@ -79,6 +91,7 @@ header .hero-text {
 }
 .bio-text p {
   margin: 10px 0;
+  text-align: justify;
 }
 
 .container {
@@ -86,6 +99,16 @@ header .hero-text {
   padding: 30px;
   margin: 0 auto;
   overflow: auto;
+}
+.container img {
+  width: 100%;
+}
+
+.works .slider {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  width: 100%;
 }
 
 @media (max-width: 700px) {

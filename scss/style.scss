@@ -76,6 +76,19 @@ header {
   }
 }
 
+footer {
+  @include set-background($dark-bg);
+  text-align: center;
+
+  .footer-content {
+    padding: 1rem 0;
+  }
+
+  p {
+    font-weight: lighter;
+  }
+}
+
 .bio {
   display: flex;
   align-items: center;
@@ -92,6 +105,7 @@ header {
 
     p {
       margin: 10px 0;
+      text-align: justify;
     }
   }
 }
@@ -101,6 +115,19 @@ header {
   padding: 30px;
   margin: 0 auto;
   overflow: auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.works {
+  .slider {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+  }
 }
 
 @import "media";
