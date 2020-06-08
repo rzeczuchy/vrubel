@@ -3,9 +3,24 @@
     display: block;
     text-align: center;
 
+    img {
+      max-width: 70%;
+    }
+
     &-text {
       max-width: 100%;
-      text-align: center;
+      padding: $pad 0 0 0;
+    }
+  }
+
+  .works {
+    .work-halfwidth {
+      display: block;
+
+      .description {
+        max-width: 100%;
+        padding: 0;
+      }
     }
   }
 }

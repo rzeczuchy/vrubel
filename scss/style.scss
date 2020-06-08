@@ -18,7 +18,7 @@ header {
   @include set-background($dark-bg);
   color: $light-text;
   background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("../images/hero-image.jpg");
+    url("../images/demon-downcast.jpg");
   height: 620px;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,6 +79,10 @@ header {
 footer {
   @include set-background($dark-bg);
   text-align: center;
+  background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("../images/demon-downcast.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
 
   .footer-content {
     padding: 1rem 0;
@@ -101,7 +105,7 @@ footer {
 
   &-text {
     max-width: 70%;
-    padding: 0 3rem;
+    padding: 0 $pad;
 
     p {
       margin: 10px 0;
@@ -122,11 +126,45 @@ footer {
 }
 
 .works {
-  .slider {
+  h2 {
+    text-align: center;
+  }
+
+  .work-fullwidth {
+    padding: $pad 0;
+
+    .description {
+      text-align: justify;
+
+      p {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .work-halfwidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .description {
+      max-width: 50%;
+      padding: 0 0 0 $pad;
+      text-align: justify;
+
+      p {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .title {
     position: relative;
-    overflow: hidden;
-    height: 600px;
-    width: 100%;
+    top: -30px;
+    left: 15px;
+    color: $light-text;
+    background-color: $transp-bg;
+    padding: 3px;
   }
 }
 
