@@ -1,0 +1,106 @@
+@import "globals";
+@import "helpers";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //border: 1px solid;
+}
+body,
+html {
+  font-family: $font-stack;
+  @include set-background($light-bg);
+  height: 100%;
+}
+
+header {
+  @include set-background($dark-bg);
+  color: $light-text;
+  background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("../images/hero-image.jpg");
+  height: 620px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: set-text-color($dark-bg);
+      padding: 5px;
+    }
+
+    a:hover {
+      color: $primary-color;
+    }
+  }
+
+  .hero {
+    height: 100%;
+
+    &-text {
+      width: 50%;
+
+      h1 {
+        font-size: 40px;
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+    }
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  &-text {
+    max-width: 70%;
+    padding: 0 3rem;
+
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+
+.container {
+  max-width: 1024px;
+  padding: 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+@import "media";

@@ -1,0 +1,11 @@
+@media (max-width: 700px) {
+  .bio {
+    display: block;
+    text-align: center;
+
+    &-text {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}

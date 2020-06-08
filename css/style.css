@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+  color: #222;
+  height: 100%;
+}
+
+header {
+  background-color: #4f4f4f;
+  color: #fff;
+  color: #fff;
+  background-image: linear-gradient(rgba(10, 10, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../images/hero-image.jpg");
+  height: 620px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav li {
+  padding: 15px;
+}
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+header nav a:hover {
+  color: #ebb4b7;
+}
+header .hero {
+  height: 100%;
+}
+header .hero-text {
+  width: 50%;
+}
+header .hero-text h1 {
+  font-size: 40px;
+  line-height: 1.1;
+}
+header .hero-text p {
+  margin: 10px 0;
+}
+header .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bio img {
+  height: 100%;
+  width: auto;
+}
+.bio-text {
+  max-width: 70%;
+  padding: 0 3rem;
+}
+.bio-text p {
+  margin: 10px 0;
+}
+
+.container {
+  max-width: 1024px;
+  padding: 30px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+@media (max-width: 700px) {
+  .bio {
+    display: block;
+    text-align: center;
+  }
+  .bio-text {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
