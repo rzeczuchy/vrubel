@@ -1,3 +1,5 @@
+// from "Sass Crash Course" by Traversy Media
+// https://www.youtube.com/watch?v=nu5mdN2JIwM
 @function set-text-color($color) {
   @if (lightness($color) > 80) {
     @return $dark-text;
