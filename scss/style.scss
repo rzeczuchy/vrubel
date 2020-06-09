@@ -12,6 +12,7 @@ html {
   font-family: $font-stack;
   @include set-background($light-bg);
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 header {
