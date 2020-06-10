@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Animate on Scroll lib CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Art of Mikhail Vrubel</title>
   </head>
   <body>
@@ -75,7 +77,7 @@
         <span id="works" class="anchor" />
         <div class="works">
           <h2>Paintings</h2>
-          <div class="work-fullwidth">
+          <div class="work-fullwidth" data-aos="fade-left">
             <img src="images/demon-seated.jpg" alt="Demon seated" />
             <span class="title">The Demon Seated, 1890</span>
             <div class="description">
@@ -89,7 +91,7 @@
               </p>
             </div>
           </div>
-          <div class="work-halfwidth">
+          <div class="work-halfwidth" data-aos="fade-right">
             <div class="image">
               <img src="images/swan-princess.jpg" alt="Swan princess" />
               <span class="title">The Swan Princess, 1900</span>
@@ -114,7 +116,7 @@
               </p>
             </div>
           </div>
-          <div class="work-fullwidth">
+          <div class="work-fullwidth" data-aos="fade-left">
             <img src="images/demon-downcast.jpg" alt="Demon seated" />
             <span class="title">The Demon Downcast, ca. 1901-1902</span>
             <div class="description">
@@ -132,7 +134,7 @@
             </div>
           </div>
 
-          <div class="work-halfwidth">
+          <div class="work-halfwidth" data-aos="fade-right">
             <div class="description pad-right">
               <h3>Six-winged Seraph (Azrael)</h3>
               <p>
@@ -146,7 +148,7 @@
                 Vrubel produced. At the time, the previously negative public
                 reception of his style was starting to reverse. For the two
                 years of his career as an artist, Vrubel's work finally enjoyed
-                deserved recognition.
+                some much deserved recognition.
               </p>
             </div>
             <div class="image">
@@ -176,6 +178,15 @@
         </p>
       </div>
     </footer>
-    <script src="main.js"></script>
+
+    <!-- Animate on Scroll scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        offset: 150,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
